@@ -1,12 +1,15 @@
 {
-  "name": "php-twig",
-  "version": "4.0.0",
-  "private": true,
+  "name": "atom-twig",
+  "version": "1.0.0",
   "description": "Twig support for Atom.",
-  "repository": "https://github.com/reesef/php-twig",
+  "repository": "https://github.com/purplebabar/atom-twig",
   "license": "MIT",
   "engines": {
     "atom": ">0.10.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+   "twig",
+   "autocomplete"
+ ],
 }

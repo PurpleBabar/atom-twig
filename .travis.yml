@@ -1,4 +1,5 @@
 dist: trusty
+language: javascript
 sudo: required
 
 notifications:
@@ -12,8 +13,10 @@ jobs:
     - stage: Cson Linting
       script:
         - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint */*.cson
-        
+
     - stage: Atom Package Manager Publishing
       if: branch = master
+      before_script:
+        - npm install atom-package-manager
       script:
-        - echo pouet
+        - apm --version
