@@ -1,5 +1,5 @@
 dist: trusty
-language: javascript
+language: node
 sudo: required
 
 notifications:
@@ -15,6 +15,7 @@ jobs:
         - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint */*.cson
 
     - stage: Atom Package Manager Publishing
+      node_js: '8'
       if: branch = master
       before_script:
         - npm install atom-package-manager
