@@ -18,6 +18,6 @@ jobs:
       node_js: '8'
       if: branch = master
       before_script:
-        - npm install atom-package-manager
+        - npm i atom-package-manager
       script:
         - apm --version
