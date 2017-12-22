@@ -1,11 +1,28 @@
-'name': 'JSON (Twig)'
-'scopeName': 'source.json.twig'
+'name': 'Twig (XML)'
+'scopeName': 'text.xml.twig'
 'fileTypes': [
-  'json.twig'
+  'xml.twig'
+  'xsd.twig'
+  'tld.twig'
+  'jsp.twig'
+  'pt.twig'
+  'cpt.twig'
+  'dtml.twig'
+  'rss.twig'
+  'opml.twig'
+  'svg.twig'
+  'xib.twig'
+  'storyboard.twig'
+  'wsdl.twig'
+  'rdf.twig'
+  'ism.twig'
+  'xlf.twig'
+  'xliff.twig'
+  'wig.twig'
 ]
 
 'injections':
-  'R: source.json.twig':
+  'R: text.xml.twig':
     'patterns': [
       {
         'include': '#twig-comment-tags'
@@ -20,9 +37,10 @@
 
 'patterns': [
   {
-    'include': 'source.json',
+    'include': 'text.xml',
   }
 ]
+
 
 'repository':
   'twig-comment-tags':

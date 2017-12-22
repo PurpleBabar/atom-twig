@@ -1,12 +1,11 @@
-'name': 'YAML (Twig)'
-'scopeName': 'source.yaml.twig'
+'name': 'Twig (JSON)'
+'scopeName': 'source.json.twig'
 'fileTypes': [
-  'yaml.twig'
-  'yml.twig'
+  'json.twig'
 ]
 
 'injections':
-  'R: source.yaml.twig':
+  'R: source.json.twig':
     'patterns': [
       {
         'include': '#twig-comment-tags'
@@ -21,13 +20,9 @@
 
 'patterns': [
   {
-    'include': 'source.twig'
-  }
-  {
-    'include': 'source.yaml',
+    'include': 'source.json',
   }
 ]
-
 
 'repository':
   'twig-comment-tags':

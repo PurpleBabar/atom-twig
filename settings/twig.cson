@@ -1,15 +1,21 @@
 {
-  ".twig": {
-    "editor": {
-      "commentStart": "{# ",
-      "commentEnd": " #}",
-      "increaseIndentPattern": "(?x)\n\t((\\{%\\s*(?:(else)?if|else|autoescape|for|block)\\s*%\\})\n\t)$",
-      "decreaseIndentPattern": "(?x)\n\t(\\{%\\s*(elseif|end(?:if|else|autoescape|for|block))(?:\\s[^%\\}]*)?\\s*%\\})\n\t"
+  ".text.twig": {
+    editor: {
+    #   foldEndPattern: '''
+    #   (?x)
+    #   	   ^(\\#\\})
+    #   		|(\\{\\%\\send.+?\\%\\})$
+    #
+    # '''
+      commentStart: "{# ",
+      commentEnd: " #}",
+      increaseIndentPattern: "(?x)\n\t((\\{%\\s*(?:(else)?if|else|autoescape|for|block)\\s*%\\})\n\t)$",
+      decreaseIndentPattern: "(?x)\n\t(\\{%\\s*(elseif|end(?:if|else|autoescape|for|block))(?:\\s[^%\\}]*)?\\s*%\\})\n\t"
     }
   },
   ".twig .meta.tag.template.value.twig": {
-    "editor": {
-        "completions": [
+    editor: {
+        completions: [
             "if",
             "else",
             "elseif",

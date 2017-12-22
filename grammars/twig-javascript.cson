@@ -1,4 +1,4 @@
-'name': 'Javascript (Twig)'
+'name': 'Twig (Javascript)'
 'scopeName': 'source.js.twig'
 'fileTypes': [
   'js.twig'

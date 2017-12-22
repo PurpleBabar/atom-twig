@@ -1,0 +1,21 @@
+dist: trusty
+sudo: required
+
+notifications:
+    email: false
+
+services:
+    - docker
+
+jobs:
+  include:
+    - stage: Cson Linting
+      script:
+        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint grammars/*
+        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint settings/*
+        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint snippets/*
+    - stage: Atom Package Manager Publishing
+        # require the branch name to be master
+        if: branch = master
+      script:
+        - echo pouet
