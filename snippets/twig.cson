@@ -2,8 +2,8 @@
   'block (block)':
     'prefix': 'blockb'
     'body': '{% block ${1:name} %}\n    $0\n{% endblock %}'
-   'spaceless':
-    'prefix': 'spaceless' 
+  'spaceless':
+    'prefix': 'spaceless'
     'body': '{% spaceless %}\n    $0\n{% endspaceless %}'
   'block':
     'prefix': 'block'

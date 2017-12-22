@@ -11,11 +11,9 @@ jobs:
   include:
     - stage: Cson Linting
       script:
-        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint grammars/*
-        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint settings/*
-        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint snippets/*
-    # - stage: Atom Package Manager Publishing
-    #     # require the branch name to be master
-    #     if: branch = master
-    #   script:
-    #     - echo pouet
+        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint */*.cson
+        
+    - stage: Atom Package Manager Publishing
+      if: branch = master
+      script:
+        - echo pouet
