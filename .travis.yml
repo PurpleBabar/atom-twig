@@ -26,3 +26,4 @@ jobs:
         - npm i atom-package-manager
       script:
         - apm login --token ${ATOM_ACCESS_TOKEN}
+        - apm publish minor
