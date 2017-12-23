@@ -1,6 +1,6 @@
 {
   "name": "atom-twig",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Twig support for Atom.",
   "repository": "https://github.com/purplebabar/atom-twig",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "dependencies": {},
   "keywords": [
-   "twig",
-   "autocomplete"
- ]
+    "twig",
+    "autocomplete"
+  ]
 }
