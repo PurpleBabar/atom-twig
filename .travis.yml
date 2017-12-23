@@ -8,9 +8,10 @@ notifications:
 services:
     - docker
 
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libsecret-1-dev
+addons:
+  apt:
+    packages:
+      - libsecret-1-dev
 
 jobs:
   include:
@@ -24,4 +25,4 @@ jobs:
       before_script:
         - npm i atom-package-manager
       script:
-        - apm --version
+        - apm login --token ${ATOM_ACCESS_TOKEN}

@@ -1,4 +1,4 @@
-# PHP-twig for atom
+# Twig for atom
 
 Twig syntax highlighting for atom.
 
