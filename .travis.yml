@@ -26,6 +26,7 @@ jobs:
         - npm i atom-package-manager
       script:
         - git remote set-url origin https://${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
+        - git remote -v
         - git config --global user.email "travis@purplebabar.io"
         - git config --global user.name "Travis_for_PurpleBabar"
         - apm login --token ${ATOM_ACCESS_TOKEN}
