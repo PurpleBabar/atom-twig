@@ -25,5 +25,5 @@ jobs:
       before_script:
         - npm i atom-package-manager
       script:
+        - git remote -v
         - apm login --token ${ATOM_ACCESS_TOKEN}
-        - apm publish minor
