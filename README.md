@@ -1,4 +1,7 @@
-# Twig for atom
+# Bringin Twig to Atom
+[![Build Status](https://travis-ci.org/PurpleBabar/atom-twig.svg?branch=master)](https://travis-ci.org/PurpleBabar/atom-twig)
+
+![logo](logo.png "Atom + Twig")
 
 Twig syntax highlighting for atom.
 
