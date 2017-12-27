@@ -19,16 +19,16 @@ jobs:
       script:
         - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint */*.cson
 
-    - stage: Atom Package Manager Publishing
-      node_js: '8'
-      if: branch = master
-      before_script:
-        - npm i atom-package-manager
-      script:
-        - git config --global user.email "lalung.alexandre@gmail.com"
-        - git config --global user.name "PurpleBabar"
-        - git remote rm origin
-        - git remote add origin https://PurpleBabar:${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
-        - git remote -v
-        - apm login --token ${ATOM_ACCESS_TOKEN}
-        - apm publish minor
+    # - stage: Atom Package Manager Publishing
+    #   node_js: '8'
+    #   if: branch = master
+    #   before_script:
+    #     - npm i atom-package-manager
+    #   script:
+    #     - git config --global user.email "lalung.alexandre@gmail.com"
+    #     - git config --global user.name "PurpleBabar"
+    #     - git remote rm origin
+    #     - git remote add origin https://PurpleBabar:${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
+    #     - git remote -v
+    #     - apm login --token ${ATOM_ACCESS_TOKEN}
+    #     - apm publish minor
