@@ -25,9 +25,10 @@ jobs:
       before_script:
         - npm i atom-package-manager
       script:
-        - git remote set-url origin https://PurpleBabar:${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
+        - git config --global user.email "lalung.alexandre@gmail.com"
+        - git config --global user.name "PurpleBabar"
+        - git remote rm origin
+        - git remote add origin https://PurpleBabar:${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
         - git remote -v
-        - git config --global user.email "travis@purplebabar.io"
-        - git config --global user.name "Travis_for_PurpleBabar"
         - apm login --token ${ATOM_ACCESS_TOKEN}
         - apm publish minor
